@@ -18,19 +18,23 @@ const HipaInformation = () => {
         <button className="conditionbtn">Medical condition</button>
         <button className="hipabtn">HIPPA form & Release of information</button>
       </div>
-      <div className="form-group form-check checkdiv">
+      <div style={{ width: "100%" }} className="form-group form-check checkdiv">
         <input
           type="checkbox"
           className="form-check-input"
           id="exampleCheck1"
         />
-        <label className="form-check-label labeltext" htmlFor="exampleCheck1">
+        <label
+          style={{ width: "100%" }}
+          className="form-check-label labeltext"
+          htmlFor="exampleCheck1"
+        >
           I agree to the <span className="bluetag">HIPPA form</span> terms and
           condtions.
         </label>
       </div>
       <div
-        style={{ paddingTop: "0" }}
+        style={{ paddingTop: "0", width: "100%" }}
         className="form-group form-check checkdiv "
       >
         <input

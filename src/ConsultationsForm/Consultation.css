@@ -175,6 +175,7 @@
 .points {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .pointsradio {
   display: flex !important;
@@ -198,8 +199,7 @@
   width: 35%;
 }
 .pointsp {
-  width: 30%;
-  padding-top: 25px;
+  width: 40%;
 }
 .forwoman {
   display: flex;
@@ -228,7 +228,39 @@
   font-family: popreg;
   font-size: 13px;
 }
+.diseasediv {
+  display: flex;
 
+  align-items: center;
+  width: 30%;
+  padding: 15px 0;
+}
+.maindiseasediv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.diseasepara {
+  padding-right: 20px;
+}
+.desieasetittle {
+  font-size: 15px;
+  font-family: popbo;
+  padding-top: 30px;
+}
+.form-check {
+  width: 20%;
+}
+.diseasepara {
+  width: 100%;
+}
+.pointspp {
+  font-size: 15px;
+  font-family: popbo;
+}
+.setpading {
+  margin-top: 7px !important;
+}
 @media (max-width: 600px) {
   .hipadetails {
     width: 80%;
