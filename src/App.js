@@ -9,6 +9,8 @@ import Hipaagrement from "./ConsultationsForm/Hipaagrement";
 import MedicalHistory from "./ConsultationsForm/MedicalHistory";
 import Hipamodal from "./ConsultationsForm/Hipamodal";
 import Index from "./ConsultationsForm/Index";
+import Dashboard from "./Dashboard/Dashboard";
+import Setting from "./Dashboard/Setting";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/medical-history" component={MedicalHistory} />
         <Route path="/hipa-modal" component={Hipamodal} />
         <Route path="/index" component={Index} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/setting" component={Setting} />
       </Switch>
     </div>
   );

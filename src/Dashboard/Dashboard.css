@@ -1,0 +1,461 @@
+body {
+  margin: 0%;
+  padding: 0;
+  /* background-color: rgba(245, 251, 255, 1) !important; */
+}
+.sidebar {
+  width: 20%;
+
+  height: 100vh;
+}
+ul {
+  margin: 0;
+}
+.addad {
+  font-weight: 600;
+}
+.secondside {
+  display: none;
+  position: absolute;
+}
+.imp {
+  list-style: none;
+  height: 35px;
+  font-family: popreg;
+
+  color: rgba(0, 71, 99, 1);
+}
+ul li {
+  list-style: none;
+}
+.div2 {
+  display: flex;
+  width: 100%;
+}
+.sec-div {
+  width: 80%;
+  padding-right: 30px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.input-text {
+  width: 382px;
+  height: 40px;
+  background-color: rgba(36, 57, 77, 0.1);
+  padding-left: 60px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.noti {
+  padding-right: 17px;
+  height: 21px;
+}
+.admi {
+  height: 34px;
+}
+
+.main2 {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 42px;
+  padding-bottom: 30px;
+}
+.Appointments {
+  background-color: rgba(0, 71, 99, 1);
+  color: white;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 7px;
+  font-family: popreg;
+}
+.heading1 {
+  font-family: popre;
+  font-size: 28px;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+}
+
+.home {
+  color: #a7c5eb;
+}
+.home span {
+  color: #00b4ff;
+}
+
+.main3 {
+  background-color: white;
+  width: 100%;
+
+  border-radius: 7px;
+  overflow: auto;
+  padding: 0 10px;
+}
+.main3::-webkit-scrollbar {
+  display: none;
+}
+.details {
+  font-family: "poppinsrg";
+  color: rgba(0, 71, 99, 1);
+  font-size: 12px;
+  line-height: 18px;
+}
+.line {
+  background-color: rgba(0, 71, 99, 1);
+  height: 0.1px;
+  width: 100%;
+}
+.details {
+  display: flex;
+}
+.details img {
+  padding-right: 34px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 71, 99, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+  flex-shrink: 0;
+}
+.threeline {
+  display: none;
+}
+.check {
+  width: 50px;
+  flex-shrink: 0;
+  padding-left: 30px;
+}
+.appointmentsec {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px 0;
+  flex-shrink: 0;
+}
+.times {
+  display: flex;
+  flex-shrink: 0;
+}
+.name {
+  width: 170px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.status {
+  width: 60px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.app {
+  width: 115px;
+  font-size: 12px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.addad {
+  width: 115px;
+  font-size: 12px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.act {
+  width: 70px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  flex-shrink: 0;
+  padding-right: 30px;
+}
+.appoints {
+  width: 100px;
+  font-family: popreg;
+  flex-shrink: 0;
+}
+.times {
+  width: 170px;
+}
+.status {
+  width: 60px;
+  font-size: 12px;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+}
+.appoints {
+  width: 115px;
+  font-family: popreg;
+  font-size: 12px;
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+}
+.addad1 {
+  width: 115px;
+  font-size: 12px;
+  font-family: popreg;
+  font-weight: 600;
+  color: rgba(0, 71, 99, 1);
+  flex-shrink: 0;
+}
+.Actionimgs {
+  width: 70px;
+  flex-shrink: 0;
+  display: flex;
+  padding-right: 30px;
+}
+.personal {
+  font-size: 12px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  flex-shrink: 0;
+}
+.docimg {
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+.sidebar {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.docaddress {
+  font-weight: 800;
+  color: rgba(0, 71, 99, 1);
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.email {
+  color: rgba(0, 71, 99, 1);
+  font-weight: 600;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.inputcontainer img {
+  position: absolute;
+  padding-left: 12px;
+  padding-top: 10px;
+}
+ul {
+  padding-left: 0;
+}
+.logoimg {
+  height: 37px;
+  padding-bottom: 74px;
+}
+.line2 {
+  height: 123px;
+  width: 10px;
+  background-color: rgba(36, 57, 77, 0.1);
+}
+.slide-items {
+  display: flex;
+  padding-top: 20px;
+}
+.items {
+  padding-left: 23px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-size: 12px;
+  font-weight: 500;
+}
+.calender {
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+}
+.setting {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.systemhead {
+  color: rgba(167, 197, 235, 1);
+  padding-bottom: 25px;
+  font-family: popreg;
+
+  font-weight: 600;
+  font-size: 13px;
+}
+.settingsec {
+  display: flex;
+  align-items: center;
+}
+.set {
+  padding-left: 20px;
+  padding-left: 20px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+  font-size: 13px;
+}
+.files {
+  padding-left: 20px;
+  font-family: popreg;
+  color: rgba(0, 71, 99, 1);
+
+  font-weight: 600;
+}
+.lebalapp {
+  font-family: popreg !important;
+  color: rgba(0, 71, 99, 1);
+
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .home {
+    font-size: 12px;
+  }
+  .sec-div {
+    width: 90%;
+    padding-left: 12px;
+  }
+  .main3 {
+    height: auto;
+    flex-shrink: 0;
+    padding: 0 10px;
+  }
+  .sidebar {
+    width: 150px;
+  }
+  .email {
+    font-size: 10px;
+  }
+  .docaddress {
+    font-size: 14px;
+  }
+  .header {
+    margin-top: 0;
+  }
+  .noti {
+    height: 36px;
+    padding-right: 16px;
+  }
+  .admi {
+    height: 36px;
+  }
+  .heading1 {
+    font-size: 16px;
+  }
+  .main2 {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  .div2 {
+    width: 94%;
+    padding-left: 18px;
+  }
+
+  .name {
+    width: 188px;
+  }
+}
+
+@media (max-width: 660px) {
+  .Appointments {
+    width: 120px;
+    padding: 0;
+    height: 45px;
+  }
+  .input-text {
+    width: 250px;
+  }
+  .status {
+    width: 80px;
+  }
+  .threeline {
+    display: block;
+  }
+}
+@media (max-width: 575.98px) {
+  .input-text {
+    width: 188px;
+    height: 37px;
+    border-radius: 4px;
+  }
+  .noti {
+    height: 27px;
+    padding-right: 6;
+  }
+  .files {
+    padding-left: 0;
+  }
+
+  .admi {
+    height: 29px;
+  }
+  .times {
+    width: 188px;
+  }
+  .inputcontainer {
+    display: none;
+  }
+  .threeline {
+    display: block;
+  }
+  .name {
+    width: 188px;
+  }
+  .header {
+    margin-top: 17px;
+    padding-top: 0;
+    width: fit-content;
+  }
+  .div2 {
+    padding-left: 0;
+    width: 100%;
+  }
+  .sec-div {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .secondside {
+    background-color: #f7f7f7;
+    width: 220px;
+    height: 100vh;
+    padding-left: 14px;
+    color: white;
+    padding-right: 14px;
+    padding-top: 0;
+  }
+  .Appointments {
+    height: 48px;
+    width: 146px;
+    padding: 0;
+  }
+  .Actionimgs {
+    display: flex;
+  }
+  .close {
+    height: 16px;
+    position: absolute;
+    right: 19px;
+    top: 24px;
+  }
+  .btn {
+    padding: 0;
+  }
+  .check {
+    padding-right: 50px;
+  }
+}

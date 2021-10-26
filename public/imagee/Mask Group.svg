@@ -1,0 +1,20 @@
+<svg width="1366" height="516" viewBox="0 0 1366 516" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1366" height="516">
+<rect width="1366" height="516" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect y="-0.467041" width="1366" height="516.292" fill="#FAFAFA"/>
+<g opacity="0.2">
+<rect opacity="0.5" x="-202.793" y="247.354" width="232.634" height="479.278" rx="116.317" transform="rotate(-60 -202.793 247.354)" fill="#00B4FF"/>
+<rect x="-225.032" y="353.428" width="143.853" height="296.371" rx="71.9267" transform="rotate(-60 -225.032 353.428)" fill="#E3FF9D"/>
+<rect opacity="0.5" x="36.2826" y="104.638" width="104.955" height="216.231" rx="52.4774" transform="rotate(-60 36.2826 104.638)" fill="#004763"/>
+<rect opacity="0.5" x="-215.942" y="303.957" width="141.853" height="294.371" rx="70.9267" transform="rotate(-60 -215.942 303.957)" stroke="#004763" stroke-width="2"/>
+</g>
+<g opacity="0.2">
+<rect opacity="0.5" x="1059.65" y="247.354" width="232.634" height="479.278" rx="116.317" transform="rotate(-60 1059.65 247.354)" fill="#00B4FF"/>
+<rect x="1037.41" y="353.428" width="143.853" height="296.371" rx="71.9267" transform="rotate(-60 1037.41 353.428)" fill="#E3FF9D"/>
+<rect opacity="0.5" x="1298.72" y="104.638" width="104.955" height="216.231" rx="52.4774" transform="rotate(-60 1298.72 104.638)" fill="#004763"/>
+<rect opacity="0.5" x="1046.5" y="303.957" width="141.853" height="294.371" rx="70.9267" transform="rotate(-60 1046.5 303.957)" stroke="#004763" stroke-width="2"/>
+</g>
+</g>
+</svg>
