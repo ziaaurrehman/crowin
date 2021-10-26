@@ -7,6 +7,7 @@ import MedicalConditions from "./ConsultationsForm/MedicalConditions";
 import HipaInformation from "./ConsultationsForm/HipaInformation";
 import Hipaagrement from "./ConsultationsForm/Hipaagrement";
 import MedicalHistory from "./ConsultationsForm/MedicalHistory";
+import Hipamodal from "./ConsultationsForm/Hipamodal";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/hipaform" component={HipaInformation} />
         <Route path="/hipa-agrement" component={Hipaagrement} />
         <Route path="/medical-history" component={MedicalHistory} />
+        <Route path="/hipa-modal" component={Hipamodal} />
       </Switch>
     </div>
   );

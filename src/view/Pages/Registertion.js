@@ -47,7 +47,7 @@ const Registertion = () => {
                 />
               </div>
             </div>
-            <div className="loginput" style={{ paddingBottom: "48px" }}>
+            <div className="loginput" style={{ paddingBottom: "30px" }}>
               <div style={{ marginBottom: "20px" }}>
                 <input className="logwidth" type="text" placeholder="Mobile" />
               </div>

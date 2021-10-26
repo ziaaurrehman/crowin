@@ -117,6 +117,10 @@ const PatientRegistration = () => {
           </div>
         </div>
       </div>
+      <div style={{ paddingTop: "16px" }} className="consultfooter hipafooter">
+        <button className="previous">Previous</button>
+        <button className="nextbtn">Next</button>
+      </div>
     </div>
   );
 };

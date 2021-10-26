@@ -9,6 +9,10 @@
   background-color: #f8f9fd;
   height: 100vh;
 }
+.loginpage {
+  padding: 30px !important;
+}
+
 .logwidth {
   width: 98%;
   background: #ffffff;
@@ -33,7 +37,7 @@
   color: #bdbdbd;
 }
 .logwidth::placeholder {
-  font-size: 14px;
+  font-size: 13px;
   font-family: popreg;
   color: #afafaf;
 }
@@ -56,7 +60,12 @@
   font-family: popbo;
 }
 .hhhp {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.logwi::placeholder {
+  font-size: 13px;
+  font-family: popreg;
+  color: #afafaf;
 }
 .logwi {
   width: 48%;
@@ -70,7 +79,7 @@
   padding-bottom: 10px;
 }
 .margin {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media (max-width: 576.98px) {
   .logwi {

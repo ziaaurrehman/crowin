@@ -8,6 +8,9 @@
   color: #0d63f3;
   font-family: popbo;
 }
+.login_tittle {
+  padding-bottom: 10px !important;
+}
 .historybtn {
   background-color: transparent;
   outline: none;
@@ -40,8 +43,8 @@
   border: none;
 }
 .personls {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .ddd::placeholder {
   color: #bdbdbd;
@@ -68,6 +71,7 @@
   color: #bdbdbd;
   font-size: 14px;
   font-family: popreg;
+  margin-bottom: 0;
 }
 .condition {
   padding: 30px;
@@ -228,6 +232,9 @@
   font-family: popreg;
   font-size: 13px;
 }
+.hhhp {
+  margin-bottom: 15px;
+}
 .diseasediv {
   display: flex;
 
@@ -261,8 +268,64 @@
 .setpading {
   margin-top: 7px !important;
 }
+.hipamodal {
+  display: flex;
+  padding: 40px;
+  width: 46%;
+}
+.modal_tittle {
+  text-align: center;
+  font-family: popbo;
+  font-size: 32px;
+}
+.datemodal {
+  text-align: center;
+  font-size: 15px;
+  color: #727272;
+  font-family: popreg;
+}
+.firstpara {
+  font-family: popreg;
+  font-size: 15px;
+  font-weight: 600;
+}
+.modalp {
+  font-family: popreg;
+  color: #727272;
+  font-size: 12px;
+}
+.space {
+  padding-right: 8px;
+}
+
 @media (max-width: 600px) {
   .hipadetails {
     width: 80%;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .points {
+    flex-wrap: wrap;
+  }
+  .pointinput {
+    width: 100%;
+  }
+  .pointsp {
+    width: 100%;
+  }
+  .forwoman {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .form-check {
+    width: 100%;
+  }
+  .maindiseasediv {
+    flex-wrap: wrap;
+  }
+  .diseasediv {
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
