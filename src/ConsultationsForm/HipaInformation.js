@@ -1,6 +1,8 @@
 import React from "react";
+import Header from "./Header";
+import Hipamodal from "./Hipamodal";
 
-const HipaInformation = () => {
+const HipaInformation = ({ step, setStep }) => {
   return (
     <div className="hipadiv">
       <div className="titlesection">
@@ -12,12 +14,7 @@ const HipaInformation = () => {
           sagittis, non sed libero. At scelerisque ac rhoncus.
         </p>
       </div>
-      <div className="stapperheadting">
-        <button className="ptbtn">Patient registration</button>
-        <button className="historybtn">Medical history</button>
-        <button className="conditionbtn">Medical condition</button>
-        <button className="hipabtn">HIPPA form & Release of information</button>
-      </div>
+      <Header step={step} />
       <div style={{ width: "100%" }} className="form-group form-check checkdiv">
         <input
           type="checkbox"
@@ -48,8 +45,15 @@ const HipaInformation = () => {
         </label>
       </div>
       <div style={{ paddingTop: "160px" }} className="consultfooter hipafooter">
-        <button className="previous">Previous</button>
-        <button className="nextbtn">Next</button>
+        <button className="previous" onClick={() => setStep(2)}>
+          Previous
+        </button>
+        <a href="/hipa-modal">
+          {" "}
+          <button className="nextbtn" onClick={() => <Hipamodal />}>
+            Next
+          </button>
+        </a>
       </div>
     </div>
   );

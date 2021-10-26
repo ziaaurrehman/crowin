@@ -30,7 +30,9 @@ const Login = () => {
             </div>
           </div>
           <div className="logfoot">
-            <h6 className="registr">Register instead?</h6>
+            <a href="/registertion">
+              <h6 className="registr">Register instead?</h6>
+            </a>
 
             <button className="btnlog" type="submit">
               Submit

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Consultation.css";
-const PatientRegistration = () => {
+import Header from "./Header";
+
+const PatientRegistration = ({ step, setStep }) => {
   return (
     <div className="patientregistration">
       <div className="titlesection">
@@ -12,12 +14,14 @@ const PatientRegistration = () => {
           sagittis, non sed libero. At scelerisque ac rhoncus.
         </p>
       </div>
-      <div className="stapperheadting">
+      {/* <div className="stapperheadting">
         <button className="ptbtn">Patient registration</button>
+
         <button className="historybtn">Medical history</button>
         <button className="conditionbtn">Medical condition</button>
         <button className="hipabtn">HIPPA form & Release of information</button>
-      </div>
+      </div> */}
+      <Header step={step} />
       <div className="personls">
         <h6 className="personl_tittle">Personal details</h6>
 
@@ -119,7 +123,9 @@ const PatientRegistration = () => {
       </div>
       <div style={{ paddingTop: "16px" }} className="consultfooter hipafooter">
         <button className="previous">Previous</button>
-        <button className="nextbtn">Next</button>
+        <button className="nextbtn" onClick={() => setStep(1)}>
+          Next
+        </button>
       </div>
     </div>
   );

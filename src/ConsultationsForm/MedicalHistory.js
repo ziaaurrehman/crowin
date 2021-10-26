@@ -1,6 +1,7 @@
 import React from "react";
+import Header from "./Header";
 
-const MedicalHistory = () => {
+const MedicalHistory = ({ step, setStep }) => {
   return (
     <div className="medicalhistory">
       <div className="titlesection">
@@ -12,12 +13,15 @@ const MedicalHistory = () => {
           sagittis, non sed libero. At scelerisque ac rhoncus.
         </p>
       </div>
-      <div style={{ marginBottom: "25px" }} className="stapperheadting">
+      {/* <div style={{ marginBottom: "25px" }} className="stapperheadting">
         <button className="ptbtn">Patient registration</button>
+
         <button className="historybtn">Medical history</button>
+
         <button className="conditionbtn">Medical condition</button>
         <button className="hipabtn">HIPPA form & Release of information</button>
-      </div>
+      </div> */}
+      <Header step={step} />
       <div className="points">
         <div className="pointsp">Are you under a physician’s care now?</div>
         <div classname="pointsradio" style={{ display: "flex" }}>
@@ -2967,8 +2971,12 @@ const MedicalHistory = () => {
         </div>
       </div>
       <div style={{ paddingTop: "60px" }} className="consultfooter hipafooter">
-        <button className="previous">Previous</button>
-        <button className="nextbtn">Next</button>
+        <button className="previous" onClick={() => setStep(0)}>
+          Previous
+        </button>
+        <button className="nextbtn" onClick={() => setStep(2)}>
+          Next
+        </button>
       </div>
     </div>
   );

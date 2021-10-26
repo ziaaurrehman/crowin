@@ -29,9 +29,12 @@ const Hipamodal = () => {
           protocols to protext the
         </p>
         <div style={{ textAlign: "center" }}>
-          <button style={{ marginLeft: "0" }} className="okbtn">
-            OK
-          </button>
+          <a href="/">
+            {" "}
+            <button style={{ marginLeft: "0" }} className="okbtn">
+              OK
+            </button>
+          </a>
         </div>
       </div>
       <div className="modalimg">

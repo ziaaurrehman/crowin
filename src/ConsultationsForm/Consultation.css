@@ -5,8 +5,7 @@
   background-color: transparent;
   outline: none;
   border: none;
-  color: #0d63f3;
-  font-family: popbo;
+  color: rgba(189, 189, 189, 1);
 }
 .login_tittle {
   padding-bottom: 10px !important;
@@ -43,8 +42,8 @@
   border: none;
 }
 .personls {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .ddd::placeholder {
   color: #bdbdbd;
@@ -175,6 +174,7 @@
 }
 .medicalhistory {
   padding: 30px;
+  height: 100vh;
 }
 .points {
   display: flex;
@@ -216,6 +216,10 @@
 .specwoman {
   font-family: popbo;
   font-size: 15px;
+}
+.active1 {
+  color: #0d63f3;
+  font-family: popbo;
 }
 .others {
   background: #ffffff;
@@ -272,6 +276,11 @@
   display: flex;
   padding: 40px;
   width: 46%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px -2px 83px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .modal_tittle {
   text-align: center;

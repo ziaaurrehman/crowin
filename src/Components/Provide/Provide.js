@@ -13,7 +13,9 @@ const Provide = () => {
           netus a a malesuada fermentum pellentesque. Odio cras augue arcu amet,
           enim diam. Sed aenean sed imperdiet cras integer.
         </p>
-        <button className="appointbtn">Book on appointment</button>
+        <a href="/index">
+          <button className="appointbtn">Book on appointment</button>
+        </a>
       </div>
       <div className="imgsection">
         <img className="provideimg" src="/imgs/Group 21.png"></img>

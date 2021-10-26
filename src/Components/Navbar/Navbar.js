@@ -56,7 +56,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <button className="loginbtn">Login</button>
+          <a href="/login">
+            <button className="loginbtn">Login</button>
+          </a>
         </div>
       </nav>
       <div className="linewith"></div>
