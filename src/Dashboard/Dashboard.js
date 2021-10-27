@@ -15,14 +15,16 @@ const Dashboard = () => {
           </div>
 
           <div className="systemhead">System</div>
-          <div className="settingsec">
-            <div className="settingsiimg">
-              <img src="/imagee/setting.svg" />
+          <a href="/setting">
+            <div className="settingsec">
+              <div className="settingsiimg">
+                <img src="/imagee/setting.svg" />
+              </div>
+              <div>
+                <label className="set">Settings</label>
+              </div>
             </div>
-            <div>
-              <label className="set">Settings</label>
-            </div>
-          </div>
+          </a>
         </div>
         <div className="sidebar secondside d-md-none" id="secondside">
           <img className="close" id="close" src="/imagee/close.svg" />
@@ -55,7 +57,7 @@ const Dashboard = () => {
             <img src="/images/files.svg" />
             <label className="files">Files &amp; Information</label>
           </div>
-          <div className="systemhead">System</div>
+          <div className="systemhead">System</div>.
           <div className="settingsec">
             <div className="settingsiimg">
               <img src="/images/setting.svg" />

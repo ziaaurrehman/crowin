@@ -14,6 +14,7 @@ ul {
 .addad {
   font-weight: 600;
 }
+
 .secondside {
   display: none;
   position: absolute;
@@ -284,6 +285,7 @@ ul {
   padding-bottom: 20px;
 }
 .systemhead {
+  display: none;
   color: rgba(167, 197, 235, 1);
   padding-bottom: 25px;
   font-family: popreg;
@@ -291,16 +293,51 @@ ul {
   font-weight: 600;
   font-size: 13px;
 }
+.circlecard {
+  border-radius: 25px;
+}
+.maincardss {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.patientcardd {
+  background: #ffffff;
+  /* shadow */
+  width: 25%;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+  border-radius: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.cardsdetails {
+  text-align: center;
+}
+.cardsdetails {
+  padding-bottom: 30px;
+  font-family: popbo;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.patienttext {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 13px;
+  font-family: popreg;
+}
 .settingsec {
   display: flex;
   align-items: center;
+  align-items: baseline;
 }
 .set {
   padding-left: 20px;
   padding-left: 20px;
-  font-family: popreg;
+  font-family: popreg !important;
   color: rgba(0, 71, 99, 1);
-  font-size: 13px;
+  font-weight: 600;
 }
 .files {
   padding-left: 20px;
@@ -312,14 +349,19 @@ ul {
 .lebalapp {
   font-family: popreg !important;
   color: rgba(0, 71, 99, 1);
-
+  padding-left: 17px;
   font-weight: 600;
+  padding-right: 5px;
 }
 
 @media (max-width: 768px) {
   .sidebar {
     padding-left: 0;
     padding-top: 0;
+  }
+  .patientcardd {
+    width: 50%;
+    margin-top: 10 px;
   }
 
   .home {
@@ -385,6 +427,12 @@ ul {
   .threeline {
     display: block;
   }
+  .patientcardd {
+    width: 80%;
+  }
+  .maincardss {
+    justify-content: center;
+  }
 }
 @media (max-width: 575.98px) {
   .input-text {
@@ -399,6 +447,9 @@ ul {
   .files {
     padding-left: 0;
   }
+  .patientcardd {
+    width: 80%;
+  }
 
   .admi {
     height: 29px;
@@ -408,6 +459,9 @@ ul {
   }
   .inputcontainer {
     display: none;
+  }
+  .maincardss {
+    justify-content: center;
   }
   .threeline {
     display: block;

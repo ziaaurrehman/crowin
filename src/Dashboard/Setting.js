@@ -1,18 +1,21 @@
 import React from "react";
-
+import "./Dashboard.css";
 const Setting = () => {
   return (
     <div>
       <div className="div2">
         <div className="sidebar d-none d-md-block">
           <img className="logoimg" src="/imagee/logo 1.svg" />
-          <div className="calender">
-            <div id="calenderbtn">
-              <img src="/imagee/calender.svg" />
-              <label className="lebalapp">Appointments</label>
-              <img src="/imagee/arrow.svg" />
+          <a href="/dashboard">
+            {" "}
+            <div className="calender">
+              <div id="calenderbtn">
+                <img src="/imagee/calender.svg" />
+                <label className="lebalapp">Appointments</label>
+                <img src="/imagee/arrow.svg" />
+              </div>
             </div>
-          </div>
+          </a>
 
           <div className="systemhead">System</div>
           <div className="settingsec">
@@ -28,11 +31,13 @@ const Setting = () => {
           <img className="close" id="close" src="/imagee/close.svg" />
           <img className="logoimg" src="/images/logo 1.svg" />
           <div className="calender" id="calender">
-            <div id="calenderbtn2">
-              <img src="imagee/calender.svg" />
-              <label className="lebalapp">Appointments</label>
-              <img src="images/arrow.svg" />
-            </div>
+            <a href="/dashboard">
+              <div id="calenderbtn2">
+                <img src="imagee/calender.svg" />
+                <label className="lebalapp">Appointments</label>
+                <img src="images/arrow.svg" />
+              </div>
+            </a>
             <div className="slide-items" id="slide2">
               <div className="line2" />
               <div className="items" id="items">
@@ -97,8 +102,80 @@ const Setting = () => {
             </div>
           </div>
           <div className="maincardss">
+            <a className="patientcardd" href="/patient-registration">
+              <div className="">
+                <div
+                  style={{
+                    paddingRight: "29px",
+
+                    float: "right",
+                  }}
+                >
+                  <img src="/imgs/edit.png" />
+                </div>
+
+                <img
+                  style={{ textAlign: "center", paddingLeft: "50px" }}
+                  src="/imgs/contacti.png"
+                ></img>
+                <p className="patienttext">Last Updated: May 15, 2020</p>
+                <h6 className="cardsdetails">Personal Details</h6>
+              </div>
+            </a>
+            <a className="patientcardd" href="/registertion">
+              <div className="">
+                <div
+                  style={{
+                    paddingRight: "29px",
+
+                    float: "right",
+                  }}
+                >
+                  <img src="/imgs/edit.png" />
+                </div>
+                <img
+                  style={{ textAlign: "center", paddingLeft: "50px" }}
+                  src="/imgs/legalform.png"
+                ></img>
+                <p className="patienttext">Last Updated: May 15, 2020</p>
+                <h6 className="cardsdetails">Legal and Consent Forms</h6>
+              </div>
+            </a>
+            <a className="patientcardd" href="/medical-history">
+              <div className="">
+                <div
+                  style={{
+                    paddingRight: "29px",
+
+                    float: "right",
+                  }}
+                >
+                  <img src="/imgs/edit.png" />
+                </div>
+                <img
+                  style={{ textAlign: "center", paddingLeft: "50px" }}
+                  src="/imgs/historyy.png"
+                ></img>
+                <p className="patienttext">Last Updated: May 15, 2020</p>
+                <h6 className="cardsdetails">Patient Medical History</h6>
+              </div>
+            </a>
             <div className="patientcardd">
-              <img src="/imgs/edit.png" />
+              <div
+                style={{
+                  paddingRight: "29px",
+
+                  float: "right",
+                }}
+              >
+                <img src="/imgs/edit.png" />
+              </div>
+              <img
+                style={{ textAlign: "center", paddingLeft: "50px" }}
+                src="/imgs/mapi.png"
+              ></img>
+              <p className="patienttext">Last Updated: May 15, 2020</p>
+              <h6 className="cardsdetails">19 L, John Street, CA.</h6>
             </div>
           </div>
         </div>
