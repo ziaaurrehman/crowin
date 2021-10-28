@@ -1,6 +1,10 @@
-import React from "react";
 import "./Dashboard.css";
+import { useState } from "react";
+import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 const Dashboard = () => {
+  const [status, setstatus] = useState("");
   return (
     <div>
       <div className="div2">
@@ -10,12 +14,11 @@ const Dashboard = () => {
             <div id="calenderbtn">
               <img src="/imagee/calender.svg" />
               <label className="lebalapp">Appointments</label>
-              <img src="/imagee/arrow.svg" />
             </div>
           </div>
 
           <div className="systemhead">System</div>
-          <a href="/setting">
+          <Link to="/setting">
             <div className="settingsec">
               <div className="settingsiimg">
                 <img src="/imagee/setting.svg" />
@@ -24,7 +27,7 @@ const Dashboard = () => {
                 <label className="set">Settings</label>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="sidebar secondside d-md-none" id="secondside">
           <img className="close" id="close" src="/imagee/close.svg" />
@@ -33,7 +36,6 @@ const Dashboard = () => {
             <div id="calenderbtn2">
               <img src="imagee/calender.svg" />
               <label className="lebalapp">Appointments</label>
-              <img src="images/arrow.svg" />
             </div>
             <div className="slide-items" id="slide2">
               <div className="line2" />
@@ -82,20 +84,47 @@ const Dashboard = () => {
                 type
               />
             </div>
+
             <div className="notificaitions">
-              <img className="noti" src="/imagee/noti.svg" />
-              <img className="admi" src="/imagee/admi.svg" />
+              <div>
+                {" "}
+                <img className="noti" src="/imagee/noti.svg" />
+              </div>
+
+              <div className="dropdown">
+                <Dropdown style={{ outline: "none" }}>
+                  <Dropdown.Toggle variant="" id="">
+                    <img className="admi" src="/imagee/admi.svg" />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu
+                    className="dropmenu"
+                    style={{ backgroundColor: "#73a47" }}
+                  >
+                    <Dropdown.Item className="linksname" href="/setting">
+                      Profile
+                    </Dropdown.Item>
+                    <Dropdown.Item className="linksname" href="#">
+                      Logout
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
             </div>
           </div>
           <div className="main2">
             <div className="heading">
               <div className="heading1">Appointments - All</div>
               <div className="home">
-                Home /<span> User</span> / Appointments
+                <Link to="/"> Home /</Link>
+                <span> Dashboard</span> <Link to="/index">/ Appointments</Link>
               </div>
             </div>
+
             <div className="btnapp">
-              <button className="Appointments">+ New Appointment</button>
+              <Link to="/index">
+                <button className="Appointments">+ New Appointment</button>
+              </Link>
             </div>
           </div>
           <div className="main3">

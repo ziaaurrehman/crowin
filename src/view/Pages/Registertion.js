@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Registertion = () => {
   return (
@@ -6,7 +7,7 @@ const Registertion = () => {
       <div className="loginpage" style={{ padding: "55px" }}>
         <div className="titlesection">
           <h4 className="login_tittle">Crowin Dentistry</h4>
-          <h5 className="loginbrand">Login</h5>
+          <h5 className="loginbrand">Registration</h5>
           <p className="loginp">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero
             hendrerit diam pretium tristique pretium sit est eget. Nunc, lacus,
@@ -58,13 +59,12 @@ const Registertion = () => {
                   placeholder="Date of Birth"
                 />
               </div>
-            </div>
-            <div className="logfoot">
-              <h6 className="registr">Register instead?</h6>
 
-              <button className="btnlog" type="submit">
-                Submit
-              </button>
+              <Link to="/dashboard">
+                <button className="btnlog2" type="submit">
+                  Submit
+                </button>
+              </Link>
             </div>
           </form>
         </div>

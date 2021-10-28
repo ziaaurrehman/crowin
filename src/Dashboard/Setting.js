@@ -1,5 +1,7 @@
 import React from "react";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
 const Setting = () => {
   return (
     <div>
@@ -86,80 +88,46 @@ const Setting = () => {
               />
             </div>
             <div className="notificaitions">
-              <img className="noti" src="/imagee/noti.svg" />
-              <img className="admi" src="/imagee/admi.svg" />
+              <div>
+                {" "}
+                <img className="noti" src="/imagee/noti.svg" />
+              </div>
+
+              <div className="dropdown">
+                <Dropdown style={{ outline: "none" }}>
+                  <Dropdown.Toggle variant="" id="">
+                    <img className="admi" src="/imagee/admi.svg" />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu
+                    className="dropmenu"
+                    style={{ backgroundColor: "#73a47" }}
+                  >
+                    <Dropdown.Item className="linksname" href="/setting">
+                      Profile
+                    </Dropdown.Item>
+                    <Dropdown.Item className="linksname" href="#">
+                      Logout
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
             </div>
           </div>
           <div className="main2">
             <div className="heading">
-              <div className="heading1">Appointments - All</div>
+              <div className="heading1">Settings</div>
               <div className="home">
-                Home /<span> User</span> / Appointments
+                <a href="/"> Home </a>/<span> Dashboard</span> / Settings
               </div>
             </div>
-            <div className="btnapp">
-              <button className="Appointments">+ New Appointment</button>
-            </div>
+            <Link to="/index">
+              <div className="btnapp">
+                <button className="Appointments">+ New Appointment</button>
+              </div>
+            </Link>
           </div>
           <div className="maincardss">
-            <a className="patientcardd" href="/patient-registration">
-              <div className="">
-                <div
-                  style={{
-                    paddingRight: "29px",
-
-                    float: "right",
-                  }}
-                >
-                  <img src="/imgs/edit.png" />
-                </div>
-
-                <img
-                  style={{ textAlign: "center", paddingLeft: "50px" }}
-                  src="/imgs/contacti.png"
-                ></img>
-                <p className="patienttext">Last Updated: May 15, 2020</p>
-                <h6 className="cardsdetails">Personal Details</h6>
-              </div>
-            </a>
-            <a className="patientcardd" href="/registertion">
-              <div className="">
-                <div
-                  style={{
-                    paddingRight: "29px",
-
-                    float: "right",
-                  }}
-                >
-                  <img src="/imgs/edit.png" />
-                </div>
-                <img
-                  style={{ textAlign: "center", paddingLeft: "50px" }}
-                  src="/imgs/legalform.png"
-                ></img>
-                <p className="patienttext">Last Updated: May 15, 2020</p>
-                <h6 className="cardsdetails">Legal and Consent Forms</h6>
-              </div>
-            </a>
-            <a className="patientcardd" href="/medical-history">
-              <div className="">
-                <div
-                  style={{
-                    paddingRight: "29px",
-
-                    float: "right",
-                  }}
-                >
-                  <img src="/imgs/edit.png" />
-                </div>
-                <img
-                  style={{ textAlign: "center", paddingLeft: "50px" }}
-                  src="/imgs/historyy.png"
-                ></img>
-                <p className="patienttext">Last Updated: May 15, 2020</p>
-                <h6 className="cardsdetails">Patient Medical History</h6>
-              </div>
-            </a>
             <div className="patientcardd">
               <div
                 style={{
@@ -168,14 +136,59 @@ const Setting = () => {
                   float: "right",
                 }}
               >
-                <img src="/imgs/edit.png" />
+                <Link to="/patient-registration">
+                  {" "}
+                  <img src="/imgs/edit.png" />
+                </Link>
+              </div>
+
+              <img
+                style={{ textAlign: "center", paddingLeft: "50px" }}
+                src="/imgs/contacti.png"
+              ></img>
+              <p className="patienttext">Last Updated: May 15, 2020</p>
+              <h6 className="cardsdetails">Personal Details</h6>
+            </div>
+
+            <div className="patientcardd">
+              <div
+                style={{
+                  paddingRight: "29px",
+
+                  float: "right",
+                }}
+              >
+                <Link to="/registertion">
+                  {" "}
+                  <img src="/imgs/view.png" />
+                </Link>
               </div>
               <img
                 style={{ textAlign: "center", paddingLeft: "50px" }}
-                src="/imgs/mapi.png"
+                src="/imgs/legalform.png"
               ></img>
               <p className="patienttext">Last Updated: May 15, 2020</p>
-              <h6 className="cardsdetails">19 L, John Street, CA.</h6>
+              <h6 className="cardsdetails">Legal and Consent Forms</h6>
+            </div>
+
+            <div className="patientcardd">
+              <div
+                style={{
+                  paddingRight: "29px",
+
+                  float: "right",
+                }}
+              >
+                <Link to="/medical-history">
+                  <img src="/imgs/edit.png" />
+                </Link>
+              </div>
+              <img
+                style={{ textAlign: "center", paddingLeft: "50px" }}
+                src="/imgs/historyy.png"
+              ></img>
+              <p className="patienttext">Last Updated: May 15, 2020</p>
+              <h6 className="cardsdetails">Patient Medical History</h6>
             </div>
           </div>
         </div>

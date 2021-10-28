@@ -44,6 +44,19 @@
 .loginput {
   padding-bottom: 100px;
 }
+.btnlog2 {
+  float: right;
+  margin-top: -22px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 34px;
+  background-color: #0d63f3;
+  color: #fff;
+  font-family: popbo;
+  font-size: 14px;
+  margin-right: 28px;
+  margin-top: 28px;
+}
 .btnlog {
   float: right;
   margin-top: -22px;

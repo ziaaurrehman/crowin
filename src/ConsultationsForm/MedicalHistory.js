@@ -22,7 +22,7 @@ const MedicalHistory = ({ step, setStep }) => {
         <button className="hipabtn">HIPPA form & Release of information</button>
       </div> */}
       <Header step={step} />
-      <div className="points">
+      <div style={{ paddingTop: "20px" }} className="points">
         <div className="pointsp">Are you under a physician’s care now?</div>
         <div classname="pointsradio" style={{ display: "flex" }}>
           <div style={{ paddingRight: "55px" }} className="form-check">
