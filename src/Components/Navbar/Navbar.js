@@ -1,12 +1,17 @@
 import React from "react";
 import "../../App.css";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
+  const moveToDiv = (id) => {
+    const el = document.getElementById(id);
+    el.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light navpadding">
-        <a className="navbar-brand" href="#">
-          Crowin Dentistry
-        </a>
+        <Link clLinkssName="navbar-brand">Crowin Dentistry</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,44 +26,68 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link className="nav-link">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("about")}
+                to="/"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("staff")}
+                to="/"
+              >
                 Staff
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("Services")}
+                to="/"
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("Patient-Info")}
+                to="/"
+              >
                 Patient Info
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("Contact")}
+                to="/"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                className="nav-link"
+                onClick={() => moveToDiv("COVID-19")}
+                to="/"
+              >
                 Our COVID-19 Policy
-              </a>
+              </Link>
             </li>
           </ul>
-          <a href="/login">
+          <Link to="/login">
             <button className="loginbtn">Login</button>
-          </a>
+          </Link>
         </div>
       </nav>
       <div className="linewith"></div>

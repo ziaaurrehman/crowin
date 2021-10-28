@@ -2,7 +2,7 @@ import React from "react";
 
 const Policy = () => {
   return (
-    <div className="policy">
+    <div className="policy" id="COVID-19">
       <div className="policyimg">
         <img src="/imgs/policyimg.png"></img>
       </div>

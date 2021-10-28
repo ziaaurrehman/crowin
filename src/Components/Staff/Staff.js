@@ -14,7 +14,7 @@ const Staff = () => {
     },
   ];
   return (
-    <div className="staff">
+    <div className="staff" id="staff">
       <h2 className="centretext">Our Staff</h2>
       <div className="flexitems">
         {data.map((el) => {

@@ -44,7 +44,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="services">
+    <div className="services" id="Services">
       <div className="servicestext">
         <div className="servicesheading">
           <h2 className="servicesh">

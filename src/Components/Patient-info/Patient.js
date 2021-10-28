@@ -16,7 +16,7 @@ const Patient = () => {
     },
   ];
   return (
-    <div className="patient">
+    <div className="patient" id="Patient-Info">
       <div className="patienttextarea">
         <h3 className="patient_heading">Patient Information</h3>
         <p className="headingp">

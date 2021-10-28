@@ -16,7 +16,7 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="contactus">
+    <div className="contactus" id="Contact">
       <div className="contactimg">
         <img className="map" src="/imgs/Map.png" />
       </div>
